@@ -78,8 +78,8 @@ describe('App', function() {
     
       });
 
-    // find by policynumber should be mandantory
-    it('should find members by cardnumber', function(done) {
+    // should throw exception if policynumber is null
+    it('should throw exception if policynumber is null', function(done) {
         const assert = require("assert");
         const policynumber = null;
         const cardnumber = '2807656978';
